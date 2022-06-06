@@ -158,7 +158,7 @@ function getRowColFromID(id) {
     const pattern = /^cell-(\d+)-(\d+)$/;
     const match = id.match(pattern);
     if (match) {
-        return [Number.pasreInt(match[1]), Number.parseInt(match[2])];
+        return [Number.parseInt(match[1]), Number.parseInt(match[2])];
     } else {
         throw `malformed id "${id}"`
     }
